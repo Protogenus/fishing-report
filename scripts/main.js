@@ -75,16 +75,16 @@ async function fetchWeatherForecast(location) {
             return;
         }
 
-        locationElement.textContent = `Location: ${data.location.name}, ${data.location.region}, ${data.location.country}`;
-        temperatureElement.textContent = `Temperature: ${data.current.temp_f}°F`; // Converted to Fahrenheit
-        descriptionElement.textContent = `Description: ${data.current.condition.text}`;
-        windSpeedElement.textContent = `Wind Speed: ${data.current.wind_mph} mph`; // Converted to mph
+        locationElement.textContent = `${data.location.name}, ${data.location.region}, ${data.location.country}`;
+        temperatureElement.textContent = `${data.current.temp_f}°F`; // Converted to Fahrenheit
+        descriptionElement.textContent = `${data.current.condition.text}`;
+        windSpeedElement.textContent = `${data.current.wind_mph} mph`; // Converted to mph
         
         // Display the current season
-        seasonElement.textContent = `Season: ${getSeason()}`;
+        seasonElement.textContent = `${getSeason()}`;
         
         // Display fishing tips based on the current season, temperature, wind speed, and weather description
-        fishingTipsElement.textContent = `Fishing Tips: ${getFishingTips(getSeason(), data.current.temp_f, data.current.wind_mph, data.current.condition.text)}`;
+        fishingTipsElement.textContent = `${getFishingTips(getSeason(), data.current.temp_f, data.current.wind_mph, data.current.condition.text)}`;
     } catch (error) {
         console.error('Error fetching weather data:', error);
     }
