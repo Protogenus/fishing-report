@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Tips</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Your location</h1>
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button id="searchButton">Submit</button>
+        <div id="weatherInfo">
+            <p><span class="label">Location:</span> <span id="location"></span></p>
+            <p><span class="label">Temperature:</span> <span id="temperature"></span></p>
+            <p><span class="label">Description:</span> <span id="description"></span></p>
+            <p><span class="label">Wind Speed:</span> <span id="windSpeed"></span></p>
+            <p><span class="label">Season:</span> <span id="season"></span></p>
+            <p><span class="label">Fishing Tips:</span> <span id="fishingTips"></span></p>
+        </div>
+        <form id="waterTempForm">
+        <h1 class="heading">Water Temperature</h1>
+        <input type="text" id="waterTemp" name="waterTemp"> <br>
+        <input type="button" id="submitWaterTemp" value="Submit">
+       </form>
+    <div id="waterTempMessage"></div>
+    </div>
+    <script src="https://www.meteosource.com/js/libs/meteosource.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

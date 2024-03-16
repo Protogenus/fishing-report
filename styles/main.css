@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* General Styles */
+body {
+    font: 1rem/1.3 "Roboto", sans-serif;
+    background: #0a1f44;
+    color: #fff;
+    padding: 50px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 105px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+input[type="text"] {
+    width: 100%;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Weather Info Container */
+#weatherInfo {
+    padding-top: 20px;
+    text-align: left; /* Left-align all text within the weather info container */
+}
+
+/* Bold Section Headings */
+#weatherInfo p {
+    font-weight: bold; /* Make section headings bold */
+    margin-bottom: 5px; /* Add some space between sections */
+    text-align: left;
+}
+
+/* Labels within the weather info container */
+#weatherInfo span.label {
+    font-weight: bold;
+    color: #0c2c38; /* Change this to your preferred color for labels */
+}
+
+/* Additional Styles for Weather Card (if applicable) */
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#searchButton {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#waterTempForm {
+    padding: 5%;
+}
+
+#waterTempMessage {
+    margin-bottom: 5px; /* Add some space between sections */
+    text-align: left;
+}
