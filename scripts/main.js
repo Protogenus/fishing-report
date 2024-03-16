@@ -67,7 +67,7 @@ function getFishingTips(season, temperature, windSpeed, weatherDescription) {
 
 async function fetchWeatherForecast(location) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&units=imperial`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&units=imperial`);
         const data = await response.json();
 
         if (data.error) {
